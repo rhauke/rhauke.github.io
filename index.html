@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--                                -->
+		<!--  OOOOOO   OOOOOOO  O       O   -->
+		<!--  O     O  O        OO     OO   -->
+		<!--  O     O  O        O O   O O   -->
+		<!--  OOOOOO   OOOOOO   O  O O  O   -->
+		<!--  O     O  O        O   O   O   -->
+		<!--  O     O  O        O       O   -->
+		<!--  OOOOOO   OOOOOOO  O       O   -->
+		<!--                                -->
+		<title>König Translations</title>
+		<script src="../jquery/jquery-1.12.3.min.js"></script>
+		<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+		<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">   
+		<script type="text/javascript" src="../myTools.js"></script>
+		<script type="text/javascript" src="test.js"></script>
+		<link href="test.css" type="text/css" rel="stylesheet">
+	</head>
+	<body class="defaultFont" onload="xcolorTags('nav', false)">
+	<!-- body class="defaultFont" onload="CSScheck('test.css')" -->
+		<!-- H E A D E R   N A V B A R -->
+		<nav class="navbar navbar-default navbar-fixed-top hidden-print" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" ID="nav-KT" href="javascript:setDisplay(false)">könig translations<span class="dot">.</span></a>
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#kt-navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse pull-right" id="kt-navbar">
+					<ul class="nav navbar-nav DE">
+						<li><a href="#services">Leistungen</a></li>
+						<li><a href="#about-us">Über uns</a></li>
+						<li><a href="#our-customers">Unsere Kunden</a></li>
+						<li><a href="#contact">Kontakt</a></li>
+						<li role="separator" class="nav-divider"></li>
+						<li><a href="#" data-toggle="modal" data-target="#disclaimer">Impressum</a></li>
+						<li><a href="javascript:setDisplay(false)">Startseite</a></li>
+					</ul>
+					<ul class="nav navbar-nav EN">
+						<li><a href="#services">services</a></li>
+						<li><a href="#about-us">about us</a></li>
+						<li><a href="#our-customers">our customers</a></li>
+						<li><a href="#contact">contact</a></li>
+						<li role="separator" class="nav-divider"></li>
+						<li><a href="#" data-toggle="modal" data-target="#disclaimer">disclaimer</a></li>
+						<li><a href="javascript:setDisplay(false)">home</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<header class = "container">
+			<div class = "jumbotron">
+				<div class="row">
+					<div class="col-sm-12">
+						<p class="DE">Wir helfen Ihnen, zu verstehen und verstanden zu werden ...überall.</p>
+						<p class="EN">We help you to understand and be understood ...wherever you are!</p>
+					</div>
+					<div class="col-sm-12">
+						<p id="KT-jumbo">könig translations<span class="dot">.</span></p>
+					</div>
+					<div class="col-xs-9 col-sm-8">
+						<a class="DE" href="#" onClick="javascript:setDisplay(true)"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Mehr erfahren</a>
+						<a class="EN" href="#" onClick="javascript:setDisplay(true)"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> Learn more</a>
+					</div>
+					<div class="col-xs-3 col-sm-4">
+						<a class="pull-right DE" onClick="javascript:setLanguage('E')"><img src="images/flgGB.png" alt="Bild Flagge Grossbritannien"></a>
+						<a class="pull-right EN" onClick="javascript:setLanguage('D')"><img src="images/flgDE.png" alt="Image of German flag"></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="container" >
+			<div class="row" id="services">
+				<aside id="services-left" class="col-sm-5">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 class="DE">Das können wir...</h3>
+							<h3 class="EN">Our services...</h3>
+						</div>
+						<div class="col-xs-12 DE">
+							<ul class="list-group">
+								<li class="list-group-item">Fachübersetzungen</li>
+								<li class="list-group-item">Beglaubigte Urkundenübersetzungen</li>
+								<li class="list-group-item">Verhandlungsdolmetschen</li>
+							</ul>
+						</div>
+						<div class="col-xs-12 EN">
+							<ul class="list-group">
+								<li class="list-group-item">Professional business and technical translations</li>
+								<li class="list-group-item">Certified translations of official documents</li>
+								<li class="list-group-item">Liaison interpreting</li>
+							</ul>
+						</div>
+						<div class="col-xs-12">
+							<a><img class="center-block" src="images/balloon3sm.png" alt="Grafik Luftballon"></a>
+						</div>
+					</div><!-- row -->
+				</aside><!-- col-*-*  -->
+				<section id="services-right" class="col-sm-7">
+					<article class="row altFont">
+						<div class="col-sm-12 defaultFont">
+							<h4 class="DE">...im einzelnen:</h4>
+							<h4 class="EN">...in detail</h4>
+						</div>
+						<div class="col-sm-12 DE">
+							<p>Übersetzungen:</p>
+							<p>Englisch-Deutsch / Deutsch-Englisch<br>
+							   Spanisch-Deutsch / Deutsch-Spanisch</p>
+						</div>
+						<div class="col-sm-12 EN">
+							<p>Translations:</p>
+							<p>English-German / German-English<br>
+								Spanish-German / German-Spanish</p>
+						</div>
+						<div class="col-sm-12 DE">
+							<p> Erstellung von beglaubigten Übersetzungen zur Vorlage bei
+							Behörden und Institutionen (Englisch und Spanisch)</p>
+						</div>
+						<div class="col-sm-12 EN">
+							<p>Certified translations of official documents for presentation to authorities and institutions (English and Spanish)</p>
+						</div>
+						<div class="col-sm-12 DE">
+							<p>Lektorat und Post-Editing</p>
+						</div>
+						<div class="col-sm-12 DE">
+							<p> Dolmetschen bei Verhandlungen, Vorträgen, Messen und vor Gericht; Vermittlung von Konferenzdolmetschern </p>
+						</div>
+						<div class="col-sm-12 EN">
+							<p>Interpreting at meetings, presentations and trade fairs; placement of conference interpreters</p>
+						</div>
+						<div class="col-sm-12 DE">
+							<p> Vermittlung qualifizierter Übersetzerinnen und Übersetzer für andere Sprachen </p>
+						</div>
+						<div class="col-sm-12 EN">
+							<p>Procurement of qualified translators for other languages (in particular French, Italian, Portuguese)</p>
+						</div>
+						<div class="col-sm-12 DE defaultFont text-center hidden-print">
+							<button class="btn btn-default btn-sm services-right__btn" data-toggle="modal" data-target="#more-service">Fachgebiete</button>
+							<button class="btn btn-default btn-sm services-right__btn" data-toggle="modal" data-target="#more-service2">Text-Sorten</button>
+						</div>
+						<div class="col-sm-12 EN defaultFont text-center hidden-print">
+							<button class="btn btn-default btn-sm services-right__btn" data-toggle="modal" data-target="#more-service">Specialist fields</button>
+							<button class="btn btn-default btn-sm services-right__btn" data-toggle="modal" data-target="#more-service2">Document types</button>
+						</div>
+					</article><!-- row -->
+				</section><!-- col-*-* -->
+			</div>
+			<div class="row" id="about-us">
+				<aside id="about-us-left" class="col-sm-5">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 class="DE">Lernen Sie uns kennen...</h3>
+							<h3 class="EN">Get to know us...</h3>
+						</div>
+					</div>
+					<div class="col-sm-12">
+						<ul class="list-group">
+							<li class="list-group-item">Ute König</li>
+							<li class="list-group-item DE">Diplom-Übersetzerin für Englisch und Spanisch</li>
+							<li class="list-group-item EN">Graduate translator for English and Spanish</li>
+						</ul>
+					</div>
+					<div class="col-sm-12">
+						<img class="center-block" src="images/balloon1sm.png" alt="Grafik Luftballon">
+					</div>
+				</aside><!-- col-*-*  -->
+				<section id="about-us-right" class="col-sm-7">
+					<article class="row altFont">
+						<div class="col-sm-12 defaultFont">
+							<h4 class="DE">Über uns:</h4>
+							<h4 class="EN">About us:</h4>
+						</div>
+						<div class="col-sm-12">
+							<p class="DE">Muttersprache Deutsch</p>
+							<p class="EN">Native german speaker</p>
+						</div>
+						<div class="col-sm-12 DE">	
+							<p>Englisch - Deutsch<br> 
+								Spanisch - Deutsch</p>
+						</div>
+						<div class="col-sm-12 EN">	
+							<p>English - German<br> 
+								Spanish - German</p>
+						</div>
+						<div class="col-sm-12 DE">	
+							<p>Durch das Oberlandesgericht Düsseldorf ermächtigt zur Beglaubigung von Übersetzungen 
+							aus dem Englischen und Spanischen ins Deutsche und umgekehrt</p>
+						</div>
+						<div class="col-sm-12 EN">	
+							<p>Authorised by the Oberlandesgericht Düsseldorf (Higher Regional Court) to certify
+							translations from English and Spanish into German and vice versa</p>
+						</div>
+						<!-- Leave some space to the right for img -->
+						<div class="clearfix">
+							<div class="col-xs-2">
+								<a><img class="about-us-right__logo" src="images/bdue40.jpg" alt="Logo des BDÜ"></a>
+							</div>
+							<div class="col-xs-10 DE">
+								<p>Mitglied des <a href="http://www.bdue.de">Bundesverband der Dolmetscher und Übersetzer</a> (BDÜ)</p>
+							</div>
+							<div class="col-xs-10 EN">
+								<p>Member of the <a href="http://www.bdue.de/en/bdue">Federal Association of Interpreters and Translators</a> (BDÜ)</p>
+							</div>
+						</div>
+						<!-- Leave some space to the right for img -->
+						<div class="clearfix">
+							<div class="col-xs-2">
+								<a><img class="about-us-right__logo" src="images/duefd.jpg" alt="Logo des DFÜD"></a>
+							</div>
+							<div class="col-xs-10 DE">
+								<p>Mitglied des <a href="http://www.uebersetzerforum-duesseldorf.de">Dolmetscher- und Übersetzer-Forums Düsseldorf</a> (DFÜD)</p>
+							</div>
+							<div class="col-xs-10 EN">
+								<p>Member of the <a href="http://www.uebersetzerforum-duesseldorf.de">Interpreters and Translators Forum Düsseldorf</a> (DFÜD)</p>
+							</div>
+						</div>
+						<div class="col-sm-12 DE">
+							<p>Weitere Übersetzerinnen und Übersetzer für andere Sprachen und Fachgebiete nennen wir Ihnen 
+							gerne auf Anfrage.</p>
+						</div>
+						<div class="col-sm-12 EN">
+							<p>We would be happy to provide you with translators for other languages and specialist 
+							fields upon demand.</p>
+						</div>
+						<div class="col-sm-12 DE">
+							<p>Die Arbeiten werden von qualifizierten Übersetzern in ihrer jeweiligen Muttersprache
+								angefertigt, so dass neben der inhaltlichen Richtigkeit auch eine sprachlich einwandfreie 
+								Ausführung gewährleistet ist.</p>
+						</div>
+						<div class="col-sm-12 EN">
+							<p>Translations are always done by qualified translators into their own native languages, 
+							 ensuring not only correctness of the content but also authenticity of language style.</p>
+						</div>
+						<div class="col-sm-12 defaultFont text-center DE hidden-print">
+							<button class="btn btn-default btn-sm about-us-right__btn" data-toggle="modal" data-target="#more-about-us">Mehr über uns</button>
+						</div>
+						<div class="col-sm-12 defaultFont text-center EN hidden-print">
+							<button class="btn btn-default btn-sm about-us-right__btn" data-toggle="modal" data-target="#more-about-us">More about us</button>
+						</div>
+					</article><!-- row -->
+				</section><!-- col -->
+			</div><!-- row -->
+			<div class="row" id="our-customers">
+				<aside id="our-customers-left" class="col-sm-5">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3 class="DE">Zu unseren Kunden...</h3>
+							<h3 class="EN">Our customers...</h3>
+						</div>
+						<div class="col-sm-12 our-customers-left__text">
+							<p class="DE">...zählen <span class="our-customers-left__notOnly">nicht nur </span> verschiedene kleinere Industrie-, 
+							Handels- und Dienstleistungsunternehmen, Behörden, Rechtsanwälte, Wirtschaftsprüfer, Consulting-
+							Unternehmen und zahlreiche private Kunden, ...
+							<p class="EN">...include <span class="our-customers-left__notOnly">not only</span> a range of smaller industrial, trade and 
+							service companies, courts of law, lawyers, auditors and numerous private clients, ...
+							</p>
+							<div class="col-sm-12">
+								<img class="center-block" src="images/balloon2sm.png" alt="Grafik Luftballon">
+							</div>
+						</div>
+					</div>
+				</aside><!-- col-*-* -->
+				<section id="our-customers-right" class="col-sm-7">
+					<article class="row">
+						<div class="col-sm-12">
+							<h4 class="DE">...sondern auch:</h4>
+							<h4 class="EN">...but also:</h4>
+						</div>
+						<div class="col-sm-12">
+							<span>ABN AMRO Bank</span> | <span>Air Products GmbH</span> | <span>Alsthom-Konzern</span> | 
+							<span>BASF AG</span> | <span>Bayer AG</span> | <span>BCN - Business Consulting Network, Düsseldorf</span> | 
+							<span>Booz Allen Hamilton</span> | <span>Christian Dior Parfums</span> | <span>Citibank</span> | 
+							<span>Citigate</span> | <span>Clariant</span> | <span>CLS Communication</span> | 
+							<span>Coley Pharmaceutical GmbH</span> | <span>Connection Park GmbH</span> | <span>Credit Suisse</span> | 
+							<span>Crompton Corporation</span> | <span>Dana Corporation</span> | <span>Deloitte</span> | 
+							<span>Deutsche Bank</span> | <span>Diamantboart Deutschland GmbH</span> | <span>DuPont</span> | 
+							<span>E.ON AG</span> | <span>Ernst & Young</span> | <span>Eurohypo Bank</span> | 
+							<span>E-TEC Power Management GmbH</span> | <span>Ford Werke AG</span> | <span>Frey.G2 GmbH</span> | 
+							<span>General Electric</span> | <span>Generali Versicherung</span> | <span>Givaudan</span> | 
+							<span>Grey Direct</span> | <span>Grey Worldwide Düsseldorf GmbH</span> | <span>Holiday Inn Hotels</span> | 
+							<span>Honeywell AG</span> | <span>Hyperion</span> | <span>HypoVereinsbank</span> | 
+							<span>Johnson & Johnson</span> | <span>KPMG</span> | 
+							<span>Marubeni Europe Plc</span> | <span>Mazda Motors</span> | <span>Nestlé</span> | 
+							<span>Nissan Europe</span> | <span>Novar GmbH</span> | <span>Novartis</span> | 
+							<span>Office E.T. Freylinger (Patentanwälte, Luxemburg)</span> | <span>Oracle</span> | 
+							<span>Ramada Hotels</span> | <span>Readymix Kies & Beton AG</span> | 
+							<span>Royal London Versicherungsgruppe</span> | <span>Sandoz</span> | <span>Sonova</span> | 
+							<span>Suissecom</span> | <span>SuisseRe</span> | <span>Syngenta</span> | <span>Synthes</span> | 
+							<span>Tenson (Funktionsbekleidung)</span> | <span>UBS Bank</span> | <span>US Zinc Corp.</span> | 
+							<span>Weber Shandwick</span> | <span>Wegusta GmbH</span> | <span>Westdeutsche Landesbank</span> | 
+							<span>Wordbank Ltd., London</span> | <span>Zurich Versicherung</span>
+						</div>
+					</article>
+				</section><!-- col-*-* -->
+			</div><!-- row -->
+			<div class="row" id="contact">
+				<aside id="contact-left" class="col-sm-5">
+					<div class="row">
+						<div class="col-xs-4 col-sm-4">
+							<img class="contact-left__img" src="images/phonesm.png" alt="Grafik Telefon">
+						</div>
+						<div class="col-xs-8 col-sm-8">
+							<h3 class="DE contact-left__hdr">Sprechen Sie uns an...</h3>
+							<h3 class="EN contact-left__hdr">Get in touch with us...</h3>
+						</div>
+					</div>
+				</aside><!-- col-*-*  -->
+				<section id="contact-right" class="col-sm-7">
+					<article class="row">
+						<div class="col-sm-12">
+							<p class="DE contact-right__invite">
+							Wir erstellen Ihnen für Ihr Übersetzungsprojekt gerne ein kostenloses und 
+							unverbindliches Angebot.
+							</p>
+							<p class="EN contact-right__invite">
+							We would be happy to send you a free offer for your translation project any time.
+							</p>
+						</div>
+					</article>
+					<article class="row">
+						<div class="col-sm-12 hidden-print">
+							<button class="btn btn-default btn-lg btn-block DE contact-right__btn" data-toggle="modal" data-target="#more-contact">Nehmen Sie Kontakt mit uns auf</button>
+							<button class="btn btn-default btn-lg btn-block EN contact-right__btn" data-toggle="modal" data-target="#more-contact">Contact us now</button>
+						</div>
+					</article>
+				</section><!-- col -->
+			</div><!-- row contact-->
+		</main><!-- container -->
+		<!-- M O D A L :  D I S C L A I M E R -->
+		<div id="disclaimer" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-xs">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h2 class="modal-title DE">Verantwortlich für Inhalt und Gestaltung:</h2>
+						<h2 class="modal-title EN">Responsible for contents and design of this web site:</h2>
+					</div>
+					<div class="modal-body">
+						<ul class="list-group">
+							<li class="list-group-item"><p>Ute König</p></li>
+							<li class="list-group-item">
+								<p>Dopplerweg 17</p>
+								<p>D-40591 Düsseldorf</p>
+							</li>
+							<li class="list-group-item">
+							<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"> </span>
+									<span class="sr-only">Phone number</span> +49 (0)211 17906467</p>
+							<p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+									<span class="sr-only">Mobile number</span>+49 (0)172 584188</p>
+							<p><span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+									<span class="sr-only">Fax number</span> +49 (0)211 17906469</p>
+							<p><a href="mailto:koenig-translations@t-online.de">koenig-translations@t-online.de</a></p>
+							</li>
+							<li class="list-group-item">
+								<p class="DE">USt.-Id.Nr. DE 121 411 067</p>
+								<p class="EN">VAT ID No. DE 121 411 067</p>
+							</li>
+						</ul>
+						<p class="DE altFont">
+						Die Inhalte dieser Seiten wurden mit größter Sorgfalt erstellt. Die Richtigkeit,
+						Vollständigkeit und Aktualität der Inhalte kann jedoch nicht gewährleistet werden.
+						</p>
+						<p class="DE altFont">
+						Insbesondere wird keine Gewähr übernommen für die Funktionsfähigkeit der Links in
+						diesen Seiten sowie die Inhalte der verlinkten Webseiten von Dritten, auf die wir
+						keinen Einfluss haben. Für die Inhalte solcher Seiten ist stets der jeweilige Anbieter
+						oder Betreiber verantwortlich.
+						</p>
+						<p class="DE">Quellen: Bilder von www.pixabay.com</p>
+						<p class="EN altFont">
+						The contents of this website were prepared with great care. However, we cannot
+						guarantee the accuracy, integrity and validity of the contents.
+						</p>
+						<p class="EN altFont">
+						In particular, we cannot guarantee the functionality of the links contained in these
+						pages as well as the contents of the linked websites of third parties which are beyond
+						our sphere of influence. The sole responsibility for the contents of such pages lies
+						with the respective owner or operator.
+						</p>
+						<p class="EN">Source: Images by www.pixabay.com</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- M O D A L :   S E R V I C E -->
+		<div id="more-service" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-xs">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h2 class="modal-title DE">Unsere Fachgebiete:</h2>
+						<h2 class="modal-title EN">We specialize in...</h2>
+					</div>
+					<div class="modal-body altFont">
+						<div class="DE">
+							<p>Öffentlichkeitsarbeit / Unternehmenskommunikation</p>
+							<p>Marketing / Werbung</p>
+							<p>Management / Strategieplanung</p>
+							<p>Finanzen (Rechnungswesen, Börse, Bankwesen)</p>
+							<p>Chemische Industrie / Agrochemie / Biotechnologie</p>
+							<p>Automobilindustrie, Maschinenbau</p>
+							<p>Tourismus & Hotellerie</p>
+							<p>Sport- und Freizeitindustrie</p>
+							<p>Politik, Soziologie und Pädagogik</p>
+						</div>
+						<div class="EN">
+							<p>Public Relations / Corporate Communication</p>
+							<p>Marketing / Advertising</p>
+							<p>Management / Strategy Planning</p>
+							<p>Finance (accounting, stock exchange, banking)</p>
+							<p>Chemical Industry / Crop Protection / Biotechnology</p>
+							<p>Automobile Industry / Mechanical Engineering / Industrial Automation</p>
+							<p>Tourism and Hotel Industry</p>
+							<p>Sports and Leisure Industry</p>
+							<p>Social Sciences and Education</p>
+							<p>Development Policy / Agricultural Policy / Economic Policy</p>
+							<p>Paleontology</p>
+						</div>
+					</div><!-- modal body -->
+					<div class="modal-footer">
+						<h2 class="DE">Details zu Fachgebieten auf Anfrage</h2>
+						<h2 class="EN">More details on specialist fields upon demand</h2>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- M O D A L :   S E R V I C E - D O C   T Y P E S -->
+		<div id="more-service2" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-xs">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h2 class="modal-title DE">Wir bearbeiten folgende Textsorten:</h2>
+						<h2 class="modal-title EN">The types of text we translate include:</h2>
+					</div>
+					<div class="modal-body altFont">
+						<div class="row">
+							<div class="col-sm-6 DE">
+								<p>Ausschreibungsunterlagen</p>
+								<p>Bedienungsanleitungen</p>
+								<p>Börsenprospekte</p>
+								<p>Broschüren</p>
+								<p>Filmtexte/Untertitel</p>
+								<p>Gebrauchsanweisungen</p>
+								<p>Geschäftsberichte</p>
+								<p>Geschäftskorrespondenz</p>
+								<p>Internetpräsenzen</p>
+								<p>Kataloge</p>
+								<p>Patente</p>
+							</div>
+							<div class="col-sm-6 DE">
+								<p>Powerpoint-Präsentationen</p>
+								<p>Pressemitteilungen</p>
+								<p>Sachbücher</p>
+								<p>Schulungsunterlagen</p>
+								<p>Technische Dokumentationen</p>
+								<p>Unternehmensmagazine</p>
+								<p>Urkunden</p>
+								<p>Verträge</p>
+								<p>Websites</p>
+								<p>Werbetexte</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-6 EN">
+								<p>advertising copy</p>
+								<p>annual reports</p>
+								<p>brochures</p>
+								<p>business correspondence</p>
+								<p>catalogues</p>
+								<p>certificates and official documents</p>
+								<p>company magazines</p>
+								<p>contracts</p>
+								<p>subtitles</p>
+								<p>instructions for use</p>
+							</div>
+							<div class="col-sm-6 EN">
+								<p>non-fiction books</p>
+								<p>operating manuals</p>
+								<p>stock exchange prospectuses</p>
+								<p>technical documentations</p>
+								<p>tender documents</p>
+								<p>training material</p>
+								<p>patents</p>
+								<p>PowerPoint presentations</p>
+								<p>press releases</p>
+								<p>web sites</p>
+							</div>
+						</div>
+					</div><!-- modal body -->
+				</div>
+			</div>
+		</div>	
+
+		<!-- M O D A L :   C O N T A C T -->
+		<div id="more-contact" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-xs">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h2 class="DE">Ihre Ansprechpartnerin:</h2>
+						<h2 class="EN">Your contact :</h2>
+					</div>
+					<div class="modal-body">
+						<ul class="list-group">
+							<li class="list-group-item">
+							<p>Ute König</p>
+							<p class="DE">Diplom-Übersetzerin</p>
+							<p class="EN">Graduate Translator</p>
+							</li>
+							<li class="list-group-item">
+								<p>Dopplerweg 17</p>
+								<p>D-40591 Düsseldorf</p>
+							</li>
+							<li class="list-group-item">
+								<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"> </span>
+										<span class="sr-only">Phone number</span>+49 (0)211 17906467</p>
+								<p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+										<span class="sr-only">Mobile number</span>+49 (0)172 584188</p>
+								<p><span class="glyphicon glyphicon-print" aria-hidden="true"></span>
+										<span class="sr-only">Fax number</span>+49 (0)211 17906469</p>
+								<p><a href="mailto:koenig-translations@t-online.de">koenig-translations@t-online.de</a></p>
+							</li>
+							<li class="list-group-item">
+								<p class="DE">USt.-Id.Nr. DE 121 411 067</p>
+								<p class="EN">VAT ID No. DE 121 411 067</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!-- M O D A L :   A B O U T   U S  -->
+		<div id="more-about-us" class="modal fade" role="dialog">
+			<div class="modal-dialog modal-xs">
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<p class="modal-title">könig translations<span class="dot">.</span></p>
+					</div>
+					<div class="modal-body altFont">
+						<p class="DE">
+							Seit 1989 haben wir uns auf die Übersetzung von Texten aus dem Bereich der
+							Unternehmenskommunikation spezialisiert. Hauptschwerpunkte sind dabei die chemische Industrie und der
+							Finanzsektor sowie Handels- und Dienstleistungsunternehmen aller Art.
+						</p>
+						<p class="DE">
+							Von der Geschäftskorrespondenz über technische Dokumentationen bis hin zum kompletten Internetauftritt
+							übersetzen wir alles,
+							was Unternehmen zur Kommunikation mit ihren fremdsprachigen Partnern benötigen.
+						</p>
+						<p class="DE">
+							Zu unseren Kunden gehören regionale, überregionale und internationale Unternehmen aller Größen und
+							Branchen, die von uns Sprachdienstleistungen in höchster Qualität erwarten und erhalten. Die
+							Einhaltung vereinbarter Liefertermine und absolute Vertraulichkeit sind für uns selbstverständlich.
+						</p>
+						<p class="EN">
+							Since 1989 we have been specialising in the translation of texts related to business, marketing and
+							corporate communication, with a focus on the chemical industry, the automobile industry and
+							biotechnology as well as commercial enterprises and advertising.
+						</p>
+						<p class="EN">
+							From business correspondence and technical documentation to complete Internet websites, we translate 
+							anything that companies require for effective communication with their international partners.
+						</p>
+						<p class="EN">
+						Our clientele includes regional, supraregional and international firms of all sizes and from all
+						sectors, all of whom expect - and receive - language services of the highest quality. Delivering 
+						our services efficiently, punctually and with absolute confidentiality are a matter of course for us.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>
