@@ -302,6 +302,9 @@ button.close:hover { background: #00d9ff; }
 	.marker {
 		background-color: green;
 	}
+	.container {
+		max-width: 500px;
+	}
 }
 /* ===================================================== */
 /* Small devices (my iPhone, landscape)                  */
