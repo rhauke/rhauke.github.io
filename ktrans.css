@@ -174,7 +174,7 @@ button.close:hover { background: #00d9ff; }
 }
 /* Some markup on NavBar */
 .navbar-default {
-	background: rgba(33, 56, 94 , 0.8);
+	background: rgba(33, 56, 94 , 0.9);
 	border-bottom: 0;
 }
 .navbar-fixed-top .navbar-nav li a {
@@ -418,10 +418,4 @@ button.close:hover { background: #00d9ff; }
 	.marker {
 		background-color: pink;
 	}
-}
-/* ================================================ */
-/* Print styling                                    */
-/* http://daneveland.com/content/printing-bootstrap */
-/* ================================================ */
-@media print {
 }
