@@ -174,11 +174,14 @@ button.close:hover { background: #00d9ff; }
 }
 /* Some markup on NavBar */
 .navbar-default {
-	background-color: #21385e;
+	background: rgba(33, 56, 94 , 0.8);
 	border-bottom: 0;
 }
 .navbar-fixed-top .navbar-nav li a {
-	color:  #c6d4eb;
+	color:  white; /* #c7d4eb; */
+}
+.navbar-fixed-top .navbar-nav li a:visited {
+	color:  white; /* #c7d4eb; */
 }
 .navbar-fixed-top .navbar-nav > li > a:hover {
 	color: orange;
@@ -194,7 +197,7 @@ button.close:hover { background: #00d9ff; }
 	padding: 8px 0 0 15px;
 }
 /* ============================================= */
-/* T E S T   A R E A */
+/* B E M                                         */
 /* ==========  SERVICES - FRAME LEFT ========== */
 #services-left {
 	background-color: #b1a9e1;
@@ -281,6 +284,8 @@ button.close:hover { background: #00d9ff; }
 	margin: 8% 0 0 0;
 	text-align: center;
 }
+/* ============================================= */
+/* T E S T   A R E A */
 /* =============================================================== */
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 /* =============================================================== */
